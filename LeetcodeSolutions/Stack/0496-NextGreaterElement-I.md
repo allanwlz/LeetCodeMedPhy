@@ -65,3 +65,6 @@ let nextGreaterElement = function(nums1, nums2) {
 };
 ```
 ## 思路
+这道题目比较重要的思路主要分为两点：
+1. 运用**单调栈**，获得 ``nums2`` 中的每个元素的下一个最大元素（Next Greater Element, NGE）；
+2. 将 ``nums2`` 中每一个元素的下一个最大元素以哈希表保存，方便查找其子集 ``nums1`` 中各个元素的 NGE。 
