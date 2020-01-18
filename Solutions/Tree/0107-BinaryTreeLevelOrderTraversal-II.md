@@ -35,7 +35,7 @@
  * @param {TreeNode} root
  * @return {number[][]}
  */
-var levelOrderBottom = function(root) {
+let levelOrderBottom = function(root) {
     // 针对空的情况
     if (!root) {
         return [];
@@ -47,7 +47,7 @@ var levelOrderBottom = function(root) {
         treeNodeQueue.push(root);
         root.depth = 0;
         while (treeNodeQueue.length) {
-            let node = treeNodeQueue.pop();
+            let node = treeNodeQueue.shift();
             if (node.left) {
                 node.left.depth = node.depth + 1;
                 treeNodeQueue.push(node.left);
@@ -57,7 +57,7 @@ var levelOrderBottom = function(root) {
                 treeNodeQueue.push(node.right);
             }
             if (result[node.depth]) {
-                result[node.depth].unshift(node.val);
+                result[node.depth].push(node.val);
             } else {
                 result[node.depth] = [node.val];
             }
