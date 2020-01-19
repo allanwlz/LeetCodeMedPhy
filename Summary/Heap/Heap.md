@@ -98,3 +98,7 @@ Rank percolateDown(Rank n, Rank i) {
 
 ## 4. 堆排序
 有了上面堆向量的知识和堆的``delMin()``算法实现，堆排序的流程不言而喻。
+
+## Appendix
+给出JavaScript版本的
+
