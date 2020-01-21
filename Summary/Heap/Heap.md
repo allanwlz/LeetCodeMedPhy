@@ -187,4 +187,3 @@ PriorityQueue.prototype._getValidBiggerIndex = function (size, pIndex, cIndex) {
   }
 };
 ```
-
